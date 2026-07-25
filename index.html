@@ -1043,6 +1043,35 @@
             background: rgba(255, 80, 80, 0.15);
         }
 
+        /* ===== 提示横幅 ===== */
+        .notice-banner {
+            background: linear-gradient(135deg, rgba(255, 167, 38, 0.15), rgba(255, 152, 0, 0.1));
+            border: 1px solid rgba(255, 167, 38, 0.3);
+            border-radius: 12px;
+            padding: 14px 20px;
+            margin: 0 auto 20px;
+            max-width: 900px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            animation: fadeInUp 0.5s ease forwards;
+        }
+
+        .notice-banner .notice-icon {
+            font-size: 1.5em;
+            flex-shrink: 0;
+        }
+
+        .notice-banner .notice-text {
+            color: #ffb74d;
+            font-size: 0.95em;
+            line-height: 1.6;
+        }
+
+        .notice-banner .notice-text strong {
+            color: #ffa726;
+        }
+
         /* ===== 页脚 ===== */
         .footer {
             text-align: center;
@@ -1177,6 +1206,14 @@
             <button class="nav-tab" data-page="feedback">📝 问题反馈</button>
             <button class="nav-tab" data-page="community">💬 玩家社区</button>
         </div>
+    </div>
+
+    <!-- ===== 提示横幅 ===== -->
+    <div class="notice-banner" style="margin-top:16px;">
+        <span class="notice-icon">⚠️</span>
+        <span class="notice-text">
+            <strong>提示：</strong>本站尚未完善，网络功能无法使用，我们很快就能完成建设
+        </span>
     </div>
 
     <!-- ============================================================ -->
